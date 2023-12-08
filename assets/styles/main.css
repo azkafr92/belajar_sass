@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("/font/assets/Montserrat-VariableFont_wght.ttf");
+}
+@media (width >= 431px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (width <= 430px) {
+  html {
+    font-size: 14px;
+  }
+}
+html {
+  font-family: Montserrat;
+}
+
+/* Font Weight */
+/* Display */
+.display-regular {
+  font-size: 3.8123rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.display-semibold {
+  font-size: 3.8123rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.display-bold {
+  font-size: 3.8123rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+/* Heading */
+/* Heading - h1 */
+.h1-regular {
+  line-height: 150%;
+  font-size: 3.063rem;
+  font-weight: 400;
+}
+
+.h1-semibold {
+  line-height: 150%;
+  font-size: 3.063rem;
+  font-weight: 500;
+}
+
+.h1-bold {
+  line-height: 150%;
+  font-size: 3.063rem;
+  font-weight: 600;
+}
+
+/* Heading - h2 */
+.h2-regular {
+  line-height: 150%;
+  font-size: 2.438rem;
+  font-weight: 400;
+}
+
+.h2-semibold {
+  line-height: 150%;
+  font-size: 2.438rem;
+  font-weight: 500;
+}
+
+.h2-bold {
+  line-height: 150%;
+  font-size: 2.438rem;
+  font-weight: 600;
+}
+
+/* Heading - h3 */
+.h3-regular {
+  line-height: 150%;
+  font-size: 1.938rem;
+  font-weight: 400;
+}
+
+.h3-semibold {
+  line-height: 150%;
+  font-size: 1.938rem;
+  font-weight: 500;
+}
+
+.h3-bold {
+  line-height: 150%;
+  font-size: 1.938rem;
+  font-weight: 600;
+}
+
+/* Heading - h4 */
+.h4-regular {
+  line-height: 150%;
+  font-size: 1.563rem;
+  font-weight: 400;
+}
+
+.h4-semibold {
+  line-height: 150%;
+  font-size: 1.563rem;
+  font-weight: 500;
+}
+
+.h4-bold {
+  line-height: 150%;
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+
+/* Heading - h5 */
+.h5-regular {
+  line-height: 150%;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.h5-semibold {
+  line-height: 150%;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.h5-bold {
+  line-height: 150%;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */

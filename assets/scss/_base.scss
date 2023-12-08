@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/font/assets/Montserrat-VariableFont_wght.ttf");
+}
+@media (width >= 431px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media (width <= 430px) {
+    html {
+        font-size: 14px;
+    }
+}
+html {
+    font-family: Montserrat;
+}
