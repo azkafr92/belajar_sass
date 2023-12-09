@@ -1,17 +1,79 @@
 @font-face {
     font-family: Montserrat;
-    src: url("/font/assets/Montserrat-VariableFont_wght.ttf");
+    src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
-@media (width >= 431px) {
+
+@media (width >=431px) {
     html {
         font-size: 16px;
     }
 }
-@media (width <= 430px) {
+
+@media (width <=430px) {
     html {
         font-size: 14px;
     }
 }
+
 html {
     font-family: Montserrat;
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+/* Remove default margin */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin: 0;
+}
+
+/* Unstyled headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Block-level images and videos */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+}
+
+/* Image constrainted to the parent width */
+img,
+video {
+    max-width: 100%;
+    height: auto;
 }

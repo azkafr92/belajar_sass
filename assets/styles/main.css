@@ -1,6 +1,6 @@
 @font-face {
   font-family: Montserrat;
-  src: url("/font/assets/Montserrat-VariableFont_wght.ttf");
+  src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 @media (width >= 431px) {
   html {
@@ -14,6 +14,65 @@
 }
 html {
   font-family: Montserrat;
+  /* apply a natural box layout model to all elements, but allowing components to change */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+/* Remove default margin */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+/* Unstyled headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Block-level images and videos */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+/* Image constrainted to the parent width */
+img,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Font Weight */
@@ -130,6 +189,622 @@ html {
   line-height: 150%;
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.bg-primary-50 {
+  background-color: #F0F9FF;
+}
+
+.bg-primary-100 {
+  background-color: #E0F2FE;
+}
+
+.bg-primary-200 {
+  background-color: #BAE6FD;
+}
+
+.bg-primary-300 {
+  background-color: #7DD3FC;
+}
+
+.bg-primary-400 {
+  background-color: #38BDF8;
+}
+
+.bg-primary-500 {
+  background-color: #0EA5E9;
+}
+
+.bg-primary-600 {
+  background-color: #0284C7;
+}
+
+.bg-primary-700 {
+  background-color: #0369A1;
+}
+
+.bg-primary-800 {
+  background-color: #075985;
+}
+
+.bg-primary-900 {
+  background-color: #0C4A6E;
+}
+
+.bg-primary-950 {
+  background-color: #082F49;
+}
+
+.text-primary-50 {
+  color: #F0F9FF;
+}
+
+.text-primary-100 {
+  color: #E0F2FE;
+}
+
+.text-primary-200 {
+  color: #BAE6FD;
+}
+
+.text-primary-300 {
+  color: #7DD3FC;
+}
+
+.text-primary-400 {
+  color: #38BDF8;
+}
+
+.text-primary-500 {
+  color: #0EA5E9;
+}
+
+.text-primary-600 {
+  color: #0284C7;
+}
+
+.text-primary-700 {
+  color: #0369A1;
+}
+
+.text-primary-800 {
+  color: #075985;
+}
+
+.text-primary-900 {
+  color: #0C4A6E;
+}
+
+.text-primary-950 {
+  color: #082F49;
+}
+
+.bg-secondary-50 {
+  background-color: #F6FEE7;
+}
+
+.bg-secondary-100 {
+  background-color: #EEFCCF;
+}
+
+.bg-secondary-200 {
+  background-color: #DDF99F;
+}
+
+.bg-secondary-300 {
+  background-color: #CBF66F;
+}
+
+.bg-secondary-400 {
+  background-color: #BAF33F;
+}
+
+.bg-secondary-500 {
+  background-color: #A4E90E;
+}
+
+.bg-secondary-600 {
+  background-color: #87C00C;
+}
+
+.bg-secondary-700 {
+  background-color: #659009;
+}
+
+.bg-secondary-800 {
+  background-color: #446006;
+}
+
+.bg-secondary-900 {
+  background-color: #223003;
+}
+
+.bg-secondary-950 {
+  background-color: #111801;
+}
+
+.text-secondary-50 {
+  color: #F6FEE7;
+}
+
+.text-secondary-100 {
+  color: #EEFCCF;
+}
+
+.text-secondary-200 {
+  color: #DDF99F;
+}
+
+.text-secondary-300 {
+  color: #CBF66F;
+}
+
+.text-secondary-400 {
+  color: #BAF33F;
+}
+
+.text-secondary-500 {
+  color: #A4E90E;
+}
+
+.text-secondary-600 {
+  color: #87C00C;
+}
+
+.text-secondary-700 {
+  color: #659009;
+}
+
+.text-secondary-800 {
+  color: #446006;
+}
+
+.text-secondary-900 {
+  color: #223003;
+}
+
+.text-secondary-950 {
+  color: #111801;
+}
+
+.bg-tertiary-50 {
+  background-color: #FEE7F6;
+}
+
+.bg-tertiary-100 {
+  background-color: #FCCFEE;
+}
+
+.bg-tertiary-200 {
+  background-color: #F99FDD;
+}
+
+.bg-tertiary-300 {
+  background-color: #F66FCB;
+}
+
+.bg-tertiary-400 {
+  background-color: #F33FBA;
+}
+
+.bg-tertiary-500 {
+  background-color: #E90EA4;
+}
+
+.bg-tertiary-600 {
+  background-color: #C00C87;
+}
+
+.bg-tertiary-700 {
+  background-color: #900965;
+}
+
+.bg-tertiary-800 {
+  background-color: #600644;
+}
+
+.bg-tertiary-900 {
+  background-color: #300322;
+}
+
+.bg-tertiary-950 {
+  background-color: #180111;
+}
+
+.text-tertiary-50 {
+  color: #FEE7F6;
+}
+
+.text-tertiary-100 {
+  color: #FCCFEE;
+}
+
+.text-tertiary-200 {
+  color: #F99FDD;
+}
+
+.text-tertiary-300 {
+  color: #F66FCB;
+}
+
+.text-tertiary-400 {
+  color: #F33FBA;
+}
+
+.text-tertiary-500 {
+  color: #E90EA4;
+}
+
+.text-tertiary-600 {
+  color: #C00C87;
+}
+
+.text-tertiary-700 {
+  color: #900965;
+}
+
+.text-tertiary-800 {
+  color: #600644;
+}
+
+.text-tertiary-900 {
+  color: #300322;
+}
+
+.text-tertiary-950 {
+  color: #180111;
+}
+
+.bg-danger-50 {
+  background-color: #FDE9E7;
+}
+
+.bg-danger-100 {
+  background-color: #FBD3D0;
+}
+
+.bg-danger-200 {
+  background-color: #F7A6A1;
+}
+
+.bg-danger-300 {
+  background-color: #F47A71;
+}
+
+.bg-danger-400 {
+  background-color: #F04E42;
+}
+
+.bg-danger-500 {
+  background-color: #F15B50;
+}
+
+.bg-danger-600 {
+  background-color: #BD1B0F;
+}
+
+.bg-danger-700 {
+  background-color: #8E140B;
+}
+
+.bg-danger-800 {
+  background-color: #5E0D08;
+}
+
+.bg-danger-900 {
+  background-color: #2F0704;
+}
+
+.bg-danger-950 {
+  background-color: #180302;
+}
+
+.text-danger-50 {
+  color: #FDE9E7;
+}
+
+.text-danger-100 {
+  color: #FBD3D0;
+}
+
+.text-danger-200 {
+  color: #F7A6A1;
+}
+
+.text-danger-300 {
+  color: #F47A71;
+}
+
+.text-danger-400 {
+  color: #F04E42;
+}
+
+.text-danger-500 {
+  color: #F15B50;
+}
+
+.text-danger-600 {
+  color: #BD1B0F;
+}
+
+.text-danger-700 {
+  color: #8E140B;
+}
+
+.text-danger-800 {
+  color: #5E0D08;
+}
+
+.text-danger-900 {
+  color: #2F0704;
+}
+
+.text-danger-950 {
+  color: #180302;
+}
+
+.bg-warning-50 {
+  background-color: #FFF9E6;
+}
+
+.bg-warning-100 {
+  background-color: #FFF3CC;
+}
+
+.bg-warning-200 {
+  background-color: #FEE79A;
+}
+
+.bg-warning-300 {
+  background-color: #FEDB67;
+}
+
+.bg-warning-400 {
+  background-color: #FDCE35;
+}
+
+.bg-warning-500 {
+  background-color: #CF9F02;
+}
+
+.bg-warning-600 {
+  background-color: #CA9B02;
+}
+
+.bg-warning-700 {
+  background-color: #987501;
+}
+
+.bg-warning-800 {
+  background-color: #654E01;
+}
+
+.bg-warning-900 {
+  background-color: #332700;
+}
+
+.bg-warning-950 {
+  background-color: #191300;
+}
+
+.text-danger-50 {
+  color: #FDE9E7;
+}
+
+.text-danger-100 {
+  color: #FBD3D0;
+}
+
+.text-danger-200 {
+  color: #F7A6A1;
+}
+
+.text-danger-300 {
+  color: #F47A71;
+}
+
+.text-danger-400 {
+  color: #F04E42;
+}
+
+.text-neutral-500 {
+  color: #F15B50;
+}
+
+.text-danger-600 {
+  color: #BD1B0F;
+}
+
+.text-danger-700 {
+  color: #8E140B;
+}
+
+.text-danger-800 {
+  color: #5E0D08;
+}
+
+.text-danger-900 {
+  color: #2F0704;
+}
+
+.text-danger-950 {
+  color: #180302;
+}
+
+.bg-neutral-50 {
+  background-color: #F7F8F9;
+}
+
+.bg-neutral-100 {
+  background-color: #F1F2F4;
+}
+
+.bg-neutral-200 {
+  background-color: #DCDFE4;
+}
+
+.bg-neutral-300 {
+  background-color: #B3B9C4;
+}
+
+.bg-neutral-400 {
+  background-color: #8590A2;
+}
+
+.bg-neutral-500 {
+  background-color: #758195;
+}
+
+.bg-neutral-600 {
+  background-color: #626F86;
+}
+
+.bg-neutral-700 {
+  background-color: #44546F;
+}
+
+.bg-neutral-800 {
+  background-color: #2C3E5D;
+}
+
+.bg-neutral-900 {
+  background-color: #172B4D;
+}
+
+.bg-neutral-950 {
+  background-color: #091E42;
+}
+
+.text-neutral-50 {
+  color: #F7F8F9;
+}
+
+.text-neutral-100 {
+  color: #F1F2F4;
+}
+
+.text-neutral-200 {
+  color: #DCDFE4;
+}
+
+.text-neutral-300 {
+  color: #B3B9C4;
+}
+
+.text-neutral-400 {
+  color: #8590A2;
+}
+
+.text-neutral-500 {
+  color: #758195;
+}
+
+.text-neutral-600 {
+  color: #626F86;
+}
+
+.text-neutral-700 {
+  color: #44546F;
+}
+
+.text-neutral-800 {
+  color: #2C3E5D;
+}
+
+.text-neutral-900 {
+  color: #172B4D;
+}
+
+.text-neutral-950 {
+  color: #091E42;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-11 {
+  gap: 2.75rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
