@@ -10,6 +10,9 @@
 .flex-auto {
   flex: 1 1 auto;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -51,4 +54,13 @@
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-0 {
+  flex-grow: 0;
 }

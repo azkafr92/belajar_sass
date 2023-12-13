@@ -115,3 +115,37 @@
     @include h5();
     @include bold();
 }
+
+/* Paragraph - p13 */
+@mixin p13 {
+    font-size: 0.813rem;
+}
+.p13-regular {
+    @include p13();
+    @include regular;
+}
+.p13-semibold {
+    @include p13();
+    @include semibold;
+}
+.p13-bold {
+    @include p13();
+    @include bold;
+}
+
+/* Paragraph - p10 */
+@mixin p10 {
+    font-size: 0.625rem;
+}
+.p10-regular {
+    @include p10();
+    @include regular;
+}
+.p10-semibold {
+    @include p10();
+    @include semibold;
+}
+.p10-bold {
+    @include p10();
+    @include bold;
+}
