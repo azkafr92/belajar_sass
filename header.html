@@ -10,15 +10,16 @@
 </head>
 
 <body>
-    <h3 class="h3-regular">Header - Light</h3>
+    <h1 class="h1-regular">Header</h1>
+    <h3 class="h3-regular">Light</h3>
     <header>
         <div class="top-navbar top-navbar-light">
-            <div class="top-navbar-wrapper">
+            <div class="menu-wrapper">
                 <div class="navbar-logo">
                     <a href="/">azkafadhli</a>
                 </div>
                 <div class="menu-mobile">
-                    <i class="h5-regular icon-menu-outlined"></i>
+                    <i id="btn-menu-open-light" class="h5-regular icon-menu-outlined"></i>
                 </div>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
@@ -29,15 +30,15 @@
             </div>
         </div>
     </header>
-    <h3 class="h3-regular">Header - Dark</h3>
+    <h3 class="h3-regular">Dark</h3>
     <header>
         <div class="top-navbar top-navbar-dark">
-            <div class="top-navbar-wrapper">
+            <div class="menu-wrapper">
                 <div class="navbar-logo">
                     <a href="/">azkafadhli</a>
                 </div>
                 <div class="menu-mobile">
-                    <i class="h5-regular icon-menu-outlined icon-white"></i>
+                    <i id="btn-menu-open-dark" class="h5-regular icon-menu-outlined icon-white"></i>
                 </div>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
@@ -46,8 +47,48 @@
                     <li><a href=#>Blog</a></li>
                 </ul>
             </div>
+        </div>
+        <div id="menu-mobile-light" class="menu-mobile-wrapper menu-mobile-wrapper-light gap-5 menu-hidden">
+            <i id="btn-menu-close-light" class="h4-regular icon-x-outlined ml-auto"></i>
+            <ul class="menu-mobile gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href=#>Blog</a></li>
+            </ul>
+        </div>
+        <div id="menu-mobile-dark" class="menu-mobile-wrapper menu-mobile-wrapper-dark gap-5 menu-hidden">
+            <i id="btn-menu-close-dark" class="h4-regular icon-x-outlined ml-auto icon-white"></i>
+            <ul class="menu-mobile gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href=#>Blog</a></li>
+            </ul>
         </div>
     </header>
 </body>
+
+<script>
+    const btnMenuCloseLight = document.getElementById('btn-menu-close-light');
+    const btnMenuCloseDark = document.getElementById('btn-menu-close-dark');
+    const btnMenuOpenLight = document.getElementById('btn-menu-open-light');
+    const btnMenuOpenDark = document.getElementById('btn-menu-open-dark');
+    const menuMobileLight = document.getElementById('menu-mobile-light');
+    const menuMobileDark = document.getElementById('menu-mobile-dark');
+
+    btnMenuCloseLight.addEventListener('click', () => {
+        menuMobileLight.classList.toggle('menu-hidden');
+    });
+    btnMenuOpenLight.addEventListener('click', () => {
+        menuMobileLight.classList.toggle('menu-hidden');
+    });
+    btnMenuCloseDark.addEventListener('click', () => {
+        menuMobileDark.classList.toggle('menu-hidden');
+    });
+    btnMenuOpenDark.addEventListener('click', () => {
+        menuMobileDark.classList.toggle('menu-hidden');
+    });
+</script>
 
 </html>
