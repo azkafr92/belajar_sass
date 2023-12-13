@@ -1,0 +1,61 @@
+@use "color";
+
+.top-navbar {
+    width: 100%;
+    padding: 16px;
+}
+.top-navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.top-navbar-light {
+    background-color: color.$primary-50;
+    color: color.$primary-950;
+}
+.top-navbar-dark {
+    background-color: color.$primary-950;
+    color: color.$primary-50;
+}
+.navbar-logo {
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+ul.menu {
+    display: none;
+}
+ul.menu {
+    list-style-type: none;
+    li a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+@media (width >= 546px) {
+    .top-navbar {
+        padding: 24px 48px;
+    }
+    .top-navbar-wrapper {
+        max-width: 1280px;
+    }
+    .menu-mobile {
+        display: none;
+    }
+    ul.menu {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        gap: 0px 32px;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
