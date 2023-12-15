@@ -1,0 +1,14 @@
+@use 'color';
+
+.border-t {
+    border-top-width: 1px;
+}
+.border-t.primary-50-10a {
+    border-top-color: rgba(color.$primary-50, .10);
+}
+.border-t.primary-900-50a {
+    border-top-color: rgba(color.$primary-900, .50);
+}
+.border-t.solid  {
+    border-top-style: solid;
+}

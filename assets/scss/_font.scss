@@ -116,8 +116,32 @@
     @include bold();
 }
 
+/* Paragraph */
+@mixin paragraph {
+    line-height: 150%;
+}
+
+/* Paragraph - p16 */
+@mixin p16 {
+    @include paragraph();
+    font-size: 1rem;
+}
+.p16-regular {
+    @include p16();
+    @include regular();
+}
+.p16-semibold {
+    @include p16();
+    @include semibold();
+}
+.p16-bold {
+    @include p16();
+    @include bold();
+}
+
 /* Paragraph - p13 */
 @mixin p13 {
+    @include paragraph();
     font-size: 0.813rem;
 }
 .p13-regular {
@@ -135,6 +159,7 @@
 
 /* Paragraph - p10 */
 @mixin p10 {
+    @include paragraph();
     font-size: 0.625rem;
 }
 .p10-regular {
@@ -147,5 +172,64 @@
 }
 .p10-bold {
     @include p10();
+    @include bold;
+}
+
+/* Label */
+@mixin label {
+    line-height: 100%;
+}
+
+/* Label - l16 */
+@mixin l16 {
+    @include label();
+    font-size: 1rem;
+}
+.l16-regular {
+    @include l16();
+    @include regular();
+}
+.l16-semibold {
+    @include l16();
+    @include semibold();
+}
+.l16-bold {
+    @include l16();
+    @include bold();
+}
+
+/* Label - l13 */
+@mixin l13 {
+    @include label();
+    font-size: 0.813rem;
+}
+.l13-regular {
+    @include l13();
+    @include regular;
+}
+.l13-semibold {
+    @include l13();
+    @include semibold;
+}
+.l13-bold {
+    @include l13();
+    @include bold;
+}
+
+/* Label - l10 */
+@mixin l10 {
+    @include label();
+    font-size: 0.625rem;
+}
+.l10-regular {
+    @include l10();
+    @include regular;
+}
+.l10-semibold {
+    @include l10();
+    @include semibold;
+}
+.l10-bold {
+    @include l10();
     @include bold;
 }
