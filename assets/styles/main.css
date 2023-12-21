@@ -916,7 +916,7 @@ footer.dark {
 
 /* Label */
 /* Label - l16 */
-.l16-regular {
+.l16-regular, .pill.pill-lg {
   line-height: 100%;
   font-size: 1rem;
   font-weight: 400;
@@ -935,7 +935,7 @@ footer.dark {
 }
 
 /* Label - l13 */
-.l13-regular {
+.l13-regular, .pill.pill-md {
   line-height: 100%;
   font-size: 0.813rem;
   font-weight: 400;
@@ -954,7 +954,7 @@ footer.dark {
 }
 
 /* Label - l10 */
-.l10-regular {
+.l10-regular, .pill.pill-sm {
   line-height: 100%;
   font-size: 0.625rem;
   font-weight: 400;
@@ -1250,6 +1250,85 @@ i.icon-sun-fill:before {
 
 i.icon-moon-fill:before {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17.2929 13.2929C16.2886 13.7471 15.1738 13.9999 14 13.9999C9.58172 13.9999 6 10.4182 6 5.9999C6 4.82593 6.25287 3.71102 6.70712 2.70667C3.93137 3.96191 2 6.75526 2 9.9997C2 14.418 5.58172 17.9997 10 17.9997C13.2443 17.9997 16.0376 16.0685 17.2929 13.2929Z" fill="%23111827"/></svg>');
+}
+
+.pill {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.pill.pill-primary.pill-dark.pill-fill {
+  color: #E0F2FE;
+  background-color: #0C4A6E;
+}
+.pill.pill-primary.pill-dark.pill-fill:hover {
+  background-color: #082F49;
+}
+.pill.pill-primary.pill-dark.pill-outlined {
+  color: #0C4A6E;
+  border: 1px solid #0C4A6E;
+}
+.pill.pill-primary.pill-dark.pill-outlined:hover {
+  color: #E0F2FE;
+  background-color: #0C4A6E;
+}
+.pill.pill-primary.pill-light.pill-fill {
+  color: #0C4A6E;
+  background-color: #E0F2FE;
+}
+.pill.pill-primary.pill-light.pill-fill:hover {
+  background-color: #BAE6FD;
+}
+.pill.pill-primary.pill-light.pill-outlined {
+  color: #E0F2FE;
+  border: 1px solid #E0F2FE;
+}
+.pill.pill-primary.pill-light.pill-outlined:hover {
+  color: #0C4A6E;
+  background-color: #E0F2FE;
+}
+.pill.pill-secondary.pill-dark.pill-fill {
+  color: #EEFCCF;
+  background-color: #223003;
+}
+.pill.pill-secondary.pill-dark.pill-fill:hover {
+  background-color: #111801;
+}
+.pill.pill-secondary.pill-dark.pill-outlined {
+  color: #223003;
+  border: 1px solid #223003;
+}
+.pill.pill-secondary.pill-dark.pill-outlined:hover {
+  color: #EEFCCF;
+  background-color: #223003;
+}
+.pill.pill-secondary.pill-light.pill-fill {
+  color: #223003;
+  background-color: #EEFCCF;
+}
+.pill.pill-secondary.pill-light.pill-fill:hover {
+  background-color: #DDF99F;
+}
+.pill.pill-secondary.pill-light.pill-outlined {
+  color: #EEFCCF;
+  border: 1px solid #EEFCCF;
+}
+.pill.pill-secondary.pill-light.pill-outlined:hover {
+  color: #223003;
+  background-color: #EEFCCF;
+}
+.pill.pill-lg {
+  padding: 6px 12px;
+}
+.pill.pill-md {
+  padding: 4px 8px;
+}
+.pill.pill-sm {
+  padding: 2px 6px;
 }
 
 .flex {
