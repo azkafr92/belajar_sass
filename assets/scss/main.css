@@ -713,7 +713,8 @@ footer.dark {
   color: inherit;
   text-decoration: none;
   display: flex;
-  column-gap: 2px;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
 }
 .social-link a:hover {
   text-decoration: underline;
@@ -1254,7 +1255,9 @@ i.icon-moon-fill:before {
 
 .pill {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   justify-content: center;
   align-items: center;
@@ -1322,26 +1325,26 @@ i.icon-moon-fill:before {
   background-color: #EEFCCF;
 }
 .pill.pill-danger.pill-dark.pill-fill {
-  color: #F7F8F9;
-  background-color: #BD1B0F;
+  color: #FBD3D0;
+  background-color: #2F0704;
 }
 .pill.pill-danger.pill-dark.pill-fill:hover {
-  background-color: #8E140B;
+  background-color: #180302;
 }
 .pill.pill-danger.pill-dark.pill-outlined {
-  color: #BD1B0F;
-  border: 1px solid #BD1B0F;
+  color: #2F0704;
+  border: 1px solid #2F0704;
 }
 .pill.pill-danger.pill-dark.pill-outlined:hover {
-  color: #F7F8F9;
-  background-color: #BD1B0F;
+  color: #FBD3D0;
+  background-color: #2F0704;
 }
 .pill.pill-danger.pill-light.pill-fill {
-  color: #5E0D08;
-  background-color: #F7A6A1;
+  color: #2F0704;
+  background-color: #FBD3D0;
 }
 .pill.pill-danger.pill-light.pill-fill:hover {
-  background-color: #F47A71;
+  background-color: #F7A6A1;
 }
 .pill.pill-danger.pill-light.pill-outlined {
   color: #FBD3D0;
@@ -1350,21 +1353,6 @@ i.icon-moon-fill:before {
 .pill.pill-danger.pill-light.pill-outlined:hover {
   color: #2F0704;
   background-color: #FBD3D0;
-}
-.pill.pill-neutral.pill-fill {
-  color: #F7F8F9;
-  background-color: #626F86;
-}
-.pill.pill-neutral.pill-fill:hover {
-  background-color: #44546F;
-}
-.pill.pill-neutral.pill-outlined {
-  color: #626F86;
-  border: 1px solid #626F86;
-}
-.pill.pill-neutral.pill-outlined:hover {
-  color: #F7F8F9;
-  background-color: #626F86;
 }
 .pill.pill-lg {
   padding: 6px 12px;
@@ -1511,6 +1499,4 @@ i.icon-moon-fill:before {
 .px {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

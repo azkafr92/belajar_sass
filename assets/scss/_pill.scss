@@ -73,6 +73,7 @@
                     background-color: color.$secondary-200;
                 }
             }
+
             &.pill-outlined {
                 color: color.$secondary-100;
                 border: 1px solid color.$secondary-100;
@@ -84,32 +85,60 @@
         }
     }
 
-    // &.pill-danger {
-    //     &.pill-dark {
-    //         &.pill-fill {
-    //             &:hover {
+    &.pill-danger {
+        &.pill-dark {
+            &.pill-fill {
+                color: color.$neutral-50;
+                background-color: color.$danger-600;
+                &:hover {
+                    background-color: color.$danger-700;
+                }
+            }
+            &.pill-outlined {
+                color: color.$danger-600;
+                border: 1px solid color.$danger-600;
+                &:hover {
+                    color: color.$neutral-50;
+                    background-color: color.$danger-600;
+                }
+            }
+        }
+        &.pill-light {
+            &.pill-fill {
+                color: color.$danger-800;
+                background-color: color.$danger-200;
+                &:hover {
+                    background-color: color.$danger-300;
+                }
+            }
+            &.pill-outlined {
+                color: color.$danger-100;
+                border: 1px solid color.$danger-100;
+                &:hover {
+                    color: color.$danger-900;
+                    background-color: color.$danger-100;
+                }
+            }
+        }
+    }
 
-    //             }
-    //         }
-    //         &.pill-outlined {
-    //             &:hover {
-
-    //             }
-    //         }
-    //     }
-    //     &.pill-light {
-    //         &.pill-fill {
-    //             &:hover {
-                    
-    //             }
-    //         }
-    //         &.pill-outlined {
-    //             &:hover {
-
-    //             }
-    //         }
-    //     }
-    // }
+    &.pill-neutral {
+        &.pill-fill {
+            color: color.$neutral-50;
+            background-color: color.$neutral-600;
+            &:hover {
+                background-color: color.$neutral-700;
+            }
+        }
+        &.pill-outlined {
+            color: color.$neutral-600;
+            border: 1px solid color.$neutral-600;
+            &:hover {
+                color: color.$neutral-50;
+                background-color: color.$neutral-600;
+            }
+        }
+    }
 
     &.pill-lg {
         @extend .l16-regular;
