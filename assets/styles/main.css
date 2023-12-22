@@ -1,6 +1,20 @@
 @font-face {
   font-family: Montserrat;
   src: url("/assets/fonts/montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/fonts/montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/fonts/montserrat/Montserrat-Bold.ttf");
+  font-weight: 600;
+  font-style: normal;
 }
 @media (width >= 431px) {
   html {
@@ -1508,9 +1522,17 @@ i.icon-moon-fill:before {
   margin-right: auto;
 }
 
-.px {
+.px-0\.5 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
