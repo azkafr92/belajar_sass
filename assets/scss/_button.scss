@@ -1,0 +1,55 @@
+@use 'color';
+@use 'font';
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    /* default */
+    width: min-content;
+    border-radius: 8px;
+    color: color.$primary-50;
+    background-color: color.$primary-800;
+    height: 25px;
+    padding: 6px 12px;
+    @include font.l13;
+    @include font.regular;
+    &:hover {
+        background-color: color.$primary-900;
+    }
+    &:active {
+        background-color: color.$primary-950;
+    }
+    &:focus {
+        outline: 2px solid color.$primary-200;
+    }
+    &:disabled {
+        background-color: color.$primary-200;
+    }
+}
+
+.btn.btn-sm {
+    border-radius: 4px;
+    height: 18px;
+    padding: 4px 8px;
+    @include font.l10;
+    @include font.regular;
+}
+
+.btn.btn-md {
+    height: 25px;
+    padding: 6px 12px;
+    @include font.l13;
+    @include font.regular;
+}
+
+.btn.btn-lg {
+    height: 32px;
+    padding: 8px 16px;
+    @include font.l16;
+    @include font.regular;
+}
