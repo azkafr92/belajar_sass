@@ -876,13 +876,13 @@ video {
   /* default */
   width: min-content;
   border-radius: 8px;
-  color: #F0F9FF;
-  background-color: #075985;
   height: 25px;
   padding: 6px 12px;
   line-height: 100%;
   font-size: 0.813rem;
   font-weight: 400;
+  color: #F0F9FF;
+  background-color: #075985;
 }
 .btn:hover {
   background-color: #0C4A6E;
@@ -920,6 +920,65 @@ video {
   line-height: 100%;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.btn.btn-outlined {
+  color: #075985;
+  border: 1px solid #075985;
+  background-color: #fff;
+}
+.btn.btn-outlined:hover {
+  color: #F0F9FF;
+  background-color: #0C4A6E;
+}
+.btn.btn-outlined:active {
+  color: #F0F9FF;
+  background-color: #082F49;
+}
+.btn.btn-outlined:focus {
+  outline: 2px solid #BAE6FD;
+}
+.btn.btn-outlined:disabled {
+  color: #F0F9FF;
+  background-color: #BAE6FD;
+}
+
+.btn.btn-danger {
+  color: #FDE9E7;
+  background-color: #F04E42;
+}
+.btn.btn-danger:hover {
+  background-color: #F15B50;
+}
+.btn.btn-danger:active {
+  background-color: #BD1B0F;
+}
+.btn.btn-danger:focus {
+  outline: 2px solid #F7A6A1;
+}
+.btn.btn-danger:disabled {
+  background-color: #F7A6A1;
+}
+
+.btn.btn-danger.btn-outlined {
+  color: #F04E42;
+  border: 1px solid #F04E42;
+  background-color: #fff;
+}
+.btn.btn-danger.btn-outlined:hover {
+  color: #FDE9E7;
+  background-color: #F15B50;
+}
+.btn.btn-danger.btn-outlined:active {
+  color: #FDE9E7;
+  background-color: #BD1B0F;
+}
+.btn.btn-danger.btn-outlined:focus {
+  outline: 2px solid #F7A6A1;
+}
+.btn.btn-danger.btn-outlined:disabled {
+  color: #FDE9E7;
+  background-color: #F7A6A1;
 }
 
 .top-navbar {

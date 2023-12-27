@@ -1,23 +1,16 @@
 @use 'color';
 @use 'font';
 
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 0;
-    font-family: inherit;
-    cursor: pointer;
-    /* default */
-    width: min-content;
-    border-radius: 8px;
-    color: color.$primary-50;
-    background-color: color.$primary-800;
+@mixin btn-md {
     height: 25px;
     padding: 6px 12px;
     @include font.l13;
     @include font.regular;
+}
+
+@mixin btn-primary {
+    color: color.$primary-50;
+    background-color: color.$primary-800;
     &:hover {
         background-color: color.$primary-900;
     }
@@ -32,6 +25,80 @@
     }
 }
 
+@mixin btn-primary-outlined {
+    color: color.$primary-800;
+    border: 1px solid color.$primary-800;
+    background-color: #fff;
+    &:hover {
+        color: color.$primary-50;
+        background-color: color.$primary-900;
+    }
+    &:active {
+        color: color.$primary-50;
+        background-color: color.$primary-950;
+    }
+    &:focus {
+        outline: 2px solid color.$primary-200;
+    }
+    &:disabled {
+        color: color.$primary-50;
+        background-color: color.$primary-200;
+    }
+}
+
+@mixin btn-danger {
+    color: color.$danger-50;
+    background-color: color.$danger-400;
+    &:hover {
+        background-color: color.$danger-500;
+    }
+    &:active {
+        background-color: color.$danger-600;
+    }
+    &:focus {
+        outline: 2px solid color.$danger-200;
+    }
+    &:disabled {
+        background-color: color.$danger-200;
+    }
+}
+
+@mixin btn-danger-outlined {
+    color: color.$danger-400;
+    border: 1px solid color.$danger-400;
+    background-color: #fff;
+    &:hover {
+        color: color.$danger-50;
+        background-color: color.$danger-500;
+    }
+    &:active {
+        color: color.$danger-50;
+        background-color: color.$danger-600;
+    }
+    &:focus {
+        outline: 2px solid color.$danger-200;
+    }
+    &:disabled {
+        color: color.$danger-50;
+        background-color: color.$danger-200;
+    }
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    /* default */
+    width: min-content;
+    border-radius: 8px;
+    @include btn-md();
+    @include btn-primary();
+}
+
 .btn.btn-sm {
     border-radius: 4px;
     height: 18px;
@@ -41,10 +108,7 @@
 }
 
 .btn.btn-md {
-    height: 25px;
-    padding: 6px 12px;
-    @include font.l13;
-    @include font.regular;
+    @include btn-md();
 }
 
 .btn.btn-lg {
@@ -52,4 +116,16 @@
     padding: 8px 16px;
     @include font.l16;
     @include font.regular;
+}
+
+.btn.btn-outlined {
+    @include btn-primary-outlined();
+}
+
+.btn.btn-danger {
+    @include btn-danger();
+}
+
+.btn.btn-danger.btn-outlined {
+    @include btn-danger-outlined();
 }
