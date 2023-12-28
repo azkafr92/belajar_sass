@@ -1,11 +1,12 @@
 @use 'base';
 @use 'border';
-@use 'button';
 @use 'color';
-@use 'component';
+@use './components/button';
+@use './components/footer';
+@use './components/nav';
+@use './components/pill';
 @use 'font';
 @use 'icon';
-@use 'pill';
 @use 'layout';
 @use 'size';
 @use 'utility';

@@ -981,6 +981,41 @@ video {
   background-color: #F7A6A1;
 }
 
+footer {
+  color: #0C4A6E;
+  background-color: #E0F2FE;
+}
+footer .social-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+footer .social-link a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  column-gap: 2px;
+}
+footer .social-link a:hover {
+  text-decoration: underline;
+}
+
+footer.dark {
+  color: #E0F2FE;
+  background-color: #0C4A6E;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+  row-gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 .top-navbar {
   width: 100%;
   padding: 16px;
@@ -1045,42 +1080,6 @@ ul.menu-mobile {
   flex-direction: column;
 }
 
-footer {
-  color: #0C4A6E;
-  background-color: #E0F2FE;
-}
-
-footer.dark {
-  color: #E0F2FE;
-  background-color: #0C4A6E;
-}
-
-.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 650px;
-  width: 100%;
-  margin: auto;
-  row-gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-.social-link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.social-link a {
-  color: inherit;
-  text-decoration: none;
-  display: flex;
-  column-gap: 2px;
-}
-.social-link a:hover {
-  text-decoration: underline;
-}
-
 @media (width >= 546px) {
   .top-navbar {
     padding: 24px 48px;
@@ -1102,6 +1101,130 @@ footer.dark {
     flex-direction: row;
   }
 }
+.pill {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.pill.pill-primary.pill-dark.pill-fill {
+  color: #E0F2FE;
+  background-color: #0C4A6E;
+}
+.pill.pill-primary.pill-dark.pill-fill:hover {
+  background-color: #082F49;
+}
+.pill.pill-primary.pill-dark.pill-outlined {
+  color: #0C4A6E;
+  border: 1px solid #0C4A6E;
+}
+.pill.pill-primary.pill-dark.pill-outlined:hover {
+  color: #E0F2FE;
+  background-color: #0C4A6E;
+}
+.pill.pill-primary.pill-light.pill-fill {
+  color: #0C4A6E;
+  background-color: #E0F2FE;
+}
+.pill.pill-primary.pill-light.pill-fill:hover {
+  background-color: #BAE6FD;
+}
+.pill.pill-primary.pill-light.pill-outlined {
+  color: #E0F2FE;
+  border: 1px solid #E0F2FE;
+}
+.pill.pill-primary.pill-light.pill-outlined:hover {
+  color: #0C4A6E;
+  background-color: #E0F2FE;
+}
+.pill.pill-secondary.pill-dark.pill-fill {
+  color: #EEFCCF;
+  background-color: #223003;
+}
+.pill.pill-secondary.pill-dark.pill-fill:hover {
+  background-color: #111801;
+}
+.pill.pill-secondary.pill-dark.pill-outlined {
+  color: #223003;
+  border: 1px solid #223003;
+}
+.pill.pill-secondary.pill-dark.pill-outlined:hover {
+  color: #EEFCCF;
+  background-color: #223003;
+}
+.pill.pill-secondary.pill-light.pill-fill {
+  color: #223003;
+  background-color: #EEFCCF;
+}
+.pill.pill-secondary.pill-light.pill-fill:hover {
+  background-color: #DDF99F;
+}
+.pill.pill-secondary.pill-light.pill-outlined {
+  color: #EEFCCF;
+  border: 1px solid #EEFCCF;
+}
+.pill.pill-secondary.pill-light.pill-outlined:hover {
+  color: #223003;
+  background-color: #EEFCCF;
+}
+.pill.pill-danger.pill-dark.pill-fill {
+  color: #F7F8F9;
+  background-color: #BD1B0F;
+}
+.pill.pill-danger.pill-dark.pill-fill:hover {
+  background-color: #8E140B;
+}
+.pill.pill-danger.pill-dark.pill-outlined {
+  color: #BD1B0F;
+  border: 1px solid #BD1B0F;
+}
+.pill.pill-danger.pill-dark.pill-outlined:hover {
+  color: #F7F8F9;
+  background-color: #BD1B0F;
+}
+.pill.pill-danger.pill-light.pill-fill {
+  color: #5E0D08;
+  background-color: #F7A6A1;
+}
+.pill.pill-danger.pill-light.pill-fill:hover {
+  background-color: #F47A71;
+}
+.pill.pill-danger.pill-light.pill-outlined {
+  color: #FBD3D0;
+  border: 1px solid #FBD3D0;
+}
+.pill.pill-danger.pill-light.pill-outlined:hover {
+  color: #2F0704;
+  background-color: #FBD3D0;
+}
+.pill.pill-neutral.pill-fill {
+  color: #F7F8F9;
+  background-color: #626F86;
+}
+.pill.pill-neutral.pill-fill:hover {
+  background-color: #44546F;
+}
+.pill.pill-neutral.pill-outlined {
+  color: #626F86;
+  border: 1px solid #626F86;
+}
+.pill.pill-neutral.pill-outlined:hover {
+  color: #F7F8F9;
+  background-color: #626F86;
+}
+.pill.pill-lg {
+  padding: 6px 12px;
+}
+.pill.pill-md {
+  padding: 4px 8px;
+}
+.pill.pill-sm {
+  padding: 2px 6px;
+}
+
 [class*=icon-] {
   display: inline-block;
 }
@@ -1380,130 +1503,6 @@ i.icon-sun-fill:before {
 
 i.icon-moon-fill:before {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17.2929 13.2929C16.2886 13.7471 15.1738 13.9999 14 13.9999C9.58172 13.9999 6 10.4182 6 5.9999C6 4.82593 6.25287 3.71102 6.70712 2.70667C3.93137 3.96191 2 6.75526 2 9.9997C2 14.418 5.58172 17.9997 10 17.9997C13.2443 17.9997 16.0376 16.0685 17.2929 13.2929Z" fill="%23111827"/></svg>');
-}
-
-.pill {
-  display: flex;
-  height: fit-content;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.pill.pill-primary.pill-dark.pill-fill {
-  color: #E0F2FE;
-  background-color: #0C4A6E;
-}
-.pill.pill-primary.pill-dark.pill-fill:hover {
-  background-color: #082F49;
-}
-.pill.pill-primary.pill-dark.pill-outlined {
-  color: #0C4A6E;
-  border: 1px solid #0C4A6E;
-}
-.pill.pill-primary.pill-dark.pill-outlined:hover {
-  color: #E0F2FE;
-  background-color: #0C4A6E;
-}
-.pill.pill-primary.pill-light.pill-fill {
-  color: #0C4A6E;
-  background-color: #E0F2FE;
-}
-.pill.pill-primary.pill-light.pill-fill:hover {
-  background-color: #BAE6FD;
-}
-.pill.pill-primary.pill-light.pill-outlined {
-  color: #E0F2FE;
-  border: 1px solid #E0F2FE;
-}
-.pill.pill-primary.pill-light.pill-outlined:hover {
-  color: #0C4A6E;
-  background-color: #E0F2FE;
-}
-.pill.pill-secondary.pill-dark.pill-fill {
-  color: #EEFCCF;
-  background-color: #223003;
-}
-.pill.pill-secondary.pill-dark.pill-fill:hover {
-  background-color: #111801;
-}
-.pill.pill-secondary.pill-dark.pill-outlined {
-  color: #223003;
-  border: 1px solid #223003;
-}
-.pill.pill-secondary.pill-dark.pill-outlined:hover {
-  color: #EEFCCF;
-  background-color: #223003;
-}
-.pill.pill-secondary.pill-light.pill-fill {
-  color: #223003;
-  background-color: #EEFCCF;
-}
-.pill.pill-secondary.pill-light.pill-fill:hover {
-  background-color: #DDF99F;
-}
-.pill.pill-secondary.pill-light.pill-outlined {
-  color: #EEFCCF;
-  border: 1px solid #EEFCCF;
-}
-.pill.pill-secondary.pill-light.pill-outlined:hover {
-  color: #223003;
-  background-color: #EEFCCF;
-}
-.pill.pill-danger.pill-dark.pill-fill {
-  color: #F7F8F9;
-  background-color: #BD1B0F;
-}
-.pill.pill-danger.pill-dark.pill-fill:hover {
-  background-color: #8E140B;
-}
-.pill.pill-danger.pill-dark.pill-outlined {
-  color: #BD1B0F;
-  border: 1px solid #BD1B0F;
-}
-.pill.pill-danger.pill-dark.pill-outlined:hover {
-  color: #F7F8F9;
-  background-color: #BD1B0F;
-}
-.pill.pill-danger.pill-light.pill-fill {
-  color: #5E0D08;
-  background-color: #F7A6A1;
-}
-.pill.pill-danger.pill-light.pill-fill:hover {
-  background-color: #F47A71;
-}
-.pill.pill-danger.pill-light.pill-outlined {
-  color: #FBD3D0;
-  border: 1px solid #FBD3D0;
-}
-.pill.pill-danger.pill-light.pill-outlined:hover {
-  color: #2F0704;
-  background-color: #FBD3D0;
-}
-.pill.pill-neutral.pill-fill {
-  color: #F7F8F9;
-  background-color: #626F86;
-}
-.pill.pill-neutral.pill-fill:hover {
-  background-color: #44546F;
-}
-.pill.pill-neutral.pill-outlined {
-  color: #626F86;
-  border: 1px solid #626F86;
-}
-.pill.pill-neutral.pill-outlined:hover {
-  color: #F7F8F9;
-  background-color: #626F86;
-}
-.pill.pill-lg {
-  padding: 6px 12px;
-}
-.pill.pill-md {
-  padding: 4px 8px;
-}
-.pill.pill-sm {
-  padding: 2px 6px;
 }
 
 .flex {

@@ -1,0 +1,34 @@
+@use '../color';
+
+footer {
+    color: color.$primary-900;
+    background-color: color.$primary-100;
+    .social-link {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        a {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            column-gap: 2px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+footer.dark {
+    color: color.$primary-100;
+    background-color: color.$primary-900;
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    width: 100%;
+    margin: auto;
+    row-gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}

@@ -1,4 +1,4 @@
-@use "color";
+@use '../color';
 
 .top-navbar {
     width: 100%;
@@ -56,38 +56,7 @@ ul.menu-mobile {
     display: flex;
     flex-direction: column;
 }
-footer {
-    color: color.$primary-900;
-    background-color: color.$primary-100;
-}
-footer.dark {
-    color: color.$primary-100;
-    background-color: color.$primary-900;
-}
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 650px;
-    width: 100%;
-    margin: auto;
-    row-gap: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-.social-link {
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    a {
-        color: inherit;
-        text-decoration: none;
-        display: flex;
-        column-gap: 2px;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
+
 @media (width >= 546px) {
     .top-navbar {
         padding: 24px 48px;
